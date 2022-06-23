@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Sign in</title>
+        <link rel="stylesheet" type="text/css"href="./css/index.css"/>
+        <link rel="stylesheet" type="text/css"href="./css/iconfont.css"/>
+    </head>
+    <body>
+        <div id="login-box">
+            <h1></h1>
+            <div class="input-box">
+                <i class="iconfont"></i>
+                <input type="text" placeholder="请输入用户名..." id="username">
+
+            </div>
+            <div class="input-box">
+                <i class="iconfont"></i>
+               <input type="password" placeholder="请输入密码..." id="passwd">
+            </div>
+        <script type="text/javascript">
+            let accountAll1 = [{ // 存储账户json数据的数组
+                    username: 1,
+                    passwd: 'qwe'
+                }
+            ]
+            let accountAll2 = [{ // 存储账户json数据的数组
+                    username:2 ,
+                    passwd: 'asd'
+                }
+            ]
+            let accountAll3 = [{ // 存储账户json数据的数组
+                    username: 3,
+                    passwd: 'zxc'
+                }
+            ]
+
+            function login1() { //登陆判断
+                let username = document.getElementById('username').value;
+                let passwd = document.getElementById('passwd').value;
+                let account = accountAll1.filter(function(e) {
+                    return e.username == username
+                })[0]; // 筛选账号返回数组，不存在则返回空数组
+                if (!account) {
+                    alert('账户不存在');
+                } else {
+                    if (account.username == username && account.passwd == passwd) {
+                        alert('登陆成功');
+                        window.location.href="主界面.html"; 
+
+                    } else {
+                        alert('登陆失败');
+                    }
+                }
+            }
+            function login2() { //登陆判断
+                let username = document.getElementById('username').value;
+                let passwd = document.getElementById('passwd').value;
+                let account = accountAll2.filter(function(e) {
+                    return e.username == username
+                })[0]; // 筛选账号返回数组，不存在则返回空数组
+                if (!account) {
+                    alert('账户不存在');
+                } else {
+                    if (account.username == username && account.passwd == passwd) {
+                        alert('登陆成功');
+                        window.location.href="主界面.html"; 
+
+                    } else {
+                        alert('登陆失败');
+                    }
+                }
+            }
+            function login3() { //登陆判断
+                let username = document.getElementById('username').value;
+                let passwd = document.getElementById('passwd').value;
+                let account = accountAll3.filter(function(e) {
+                    return e.username == username
+                })[0]; // 筛选账号返回数组，不存在则返回空数组
+                if (!account) {
+                    alert('账户不存在');
+                } else {
+                    if (account.username == username && account.passwd == passwd) {
+                        alert('登陆成功');
+                        window.location.href="主界面.html"; 
+
+                    } else {
+                        alert('登陆失败');
+                    }
+                }
+            }
+            function doClear() { //获取页面所有的input框，是text和password框，内容=空串
+                let inputs = document.getElementsByTagName("input");
+                for (let i = 0; i < inputs.length; i++) {
+                    if (inputs[i].type == 'text' || inputs[i].type == 'password') {
+                        inputs[i].value = '';
+                    }
+                }
+            }
+        </script>
+            <input type="button" value="学生登录" onclick="login1()">
+            <input type="button" value="教师登录" onclick="login2()">
+            <input type="button" value="管理员登录" onclick="login3()">
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,53 @@
+body{
+	background-image: url(../img/登录界面.png);
+	background-repeat: no-repeat;
+	background-size:100%;
+	background-position: 0px 0px;
+}
+#login-box{
+	background: none;
+	border-radius: 13px;
+	text-align: center;
+	margin: 830px;
+	margin-top: 80px;
+	margin-bottom:400px;
+	width: 359px;
+	height: 300px;
+}
+
+#login-box h1{
+	padding-top: 40px;
+	color: #ffffff;
+}
+
+#login-box .input-box{
+	margin-top: 26px;
+}
+#login-box .input-box input{
+	border: none;
+	background-color: #FFFFFF;
+	border-radius:15px ;
+	padding: 22px 52px;
+	outline: none;
+	color: #111111;
+}
+
+input[type="button" i]{
+	line-height:30px;
+	margin-top: 13px;
+	width: 113px;
+	height: 60px;
+	border-radius:13px ;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to top, #c77200 100%, #c77200 100%);
+	color: #111111;
+}
+
+input[type="button" i]:hover{
+	background-image: linear-gradient(to top, #6871f0 100%, #6871f0 100%);
+}
+#login-box .input-box i{
+	color: #FFFFFF;
+}
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>考试名</title>
+        <link rel="stylesheet" type="text/css"href="./css/index-te.css"/>
+        <link rel="stylesheet" type="text/css"href="./css/iconfont.css"/>
+        <link rel="stylesheet" type="text/js"href
+    </head>
+    <body>
+        <div class="dropdown">
+               <button class="dropbtn">郑居泽</button>
+               <div class="dropdown-content">
+                <a href="#">我的考试</a>
+                <a href="#">考试历史</a>
+                <a href="#">成绩统计</a>
+                <a href="#"><button1 id="showPopup" onclick="showPopup()">退出登录</button1></a>
+            </div>
+               <div class="tef">
+                <button1 id="showPopup2" onclick="showPopup2()">提交试卷</button1>
+            </div>
+            </div>
+            <script>
+                function showPopup(){var overlay = document.getElementById("overlay");
+                overlay.style.display = "block";
+            }
+            function hidePopup(){
+                var overlay = document.getElementById("overlay");
+                overlay.style.display = "none";
+            }
+             function showPopup2(){var overlay = document.getElementById("overlay2");
+                overlay.style.display = "block";
+            }
+            function hidePopup2(){
+                var overlay = document.getElementById("overlay2");
+                overlay.style.display = "none";
+            }
+             function showPopup3(){var overlay = document.getElementById("overlay3");
+                overlay.style.display = "block";
+            }
+            function hidePopup3(){
+                var overlay = document.getElementById("overlay3");
+                overlay.style.display = "none";
+            }
+            </script>
+            <div id="overlay">
+                <div class="popup">
+                    <p class="popup_title">提示</p>
+                    <p class="popup_content">确认退出吗？</p>
+                    <div class="popup_btn">
+                        <button class="cancelBtn" onclick="hidePopup()">取消</button>
+                          <a href="用户登录.html"><button class="confirmBtn" onclick="hidePopup()">确认</button></a>
+                    </div>
+                </div>
+            </div>
+              <div id="overlay2">
+                <div class="popup">
+                    <p class="popup_title">提示</p>
+                    <p class="popup_content">确认交卷吗？</p>
+                    <div class="popup_btn">
+                        <button class="cancelBtn" onclick="hidePopup2()">取消</button>
+                          <a href="主界面.html"><button class="confirmBtn" onclick="hidePopup2()">确认</button></a>
+                    </div>
+                </div>
+            </div>
+             <div id="overlay3">
+                <div class="popup">
+                    <p class="popup_title">回答正确</p>
+                    <p class="popup_content">该题考点....</p>
+                    <div class="popup_btn">
+                        <button class="cancelBtn" onclick="hidePopup3()">确认</button>
+                    </div>
+                </div>
+            </div>
+        <div id="test">
+              <button2 id="showPopup3" onclick="showPopup3()"></button2>
+        </div>
+    </body>
+</html>0
